@@ -65,7 +65,9 @@ a.selected,
 input[type="submit"],
 .project span {
     background-color: #4aaaa5;
-    color:white; 
+    color:white;
+    animation-name: teal-hover;
+    animation-duration: 500ms;
 }
 
 header h1 {
@@ -284,3 +286,16 @@ input[type="submit"] {
         padding-inline-start:0px;
     }
 }
+
+/* teal animation */
+@keyframes teal-hover {
+    from {
+        background-color: white;
+        color: #777
+    }
+    to {
+        background-color: #4aaaa5;
+        color:white;
+    }
+  }
+  
