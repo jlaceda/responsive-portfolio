@@ -9,15 +9,18 @@
 
         <header>
             <div id="inside-header">
-                <h1>John Michael Laceda</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">About</a> &#x7c;</li>
-                        <li><a href="portfolio.html">Portfolio</a> &#x7c;</li>
-                        <li><a href="#" class="selected">Contact</a></li>
-                    </ul>
-                </nav>
+                <div id="h1-container">
+                    <h1>John Michael Laceda</h1>
+                </div>
+
             </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a> &#x7c;</li>
+                    <li><a href="portfolio.html">Portfolio</a> &#x7c;</li>
+                    <li><a href="#" class="selected">Contact</a></li>
+                </ul>
+            </nav>
         </header>
 
         <section>
@@ -25,9 +28,11 @@
             <hr>
             <form action="contact.html" method="GET">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="John Smith" required>
+                <input type="text" name="name" id="name" placeholder="John
+                    Smith" required>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                <input type="email" name="email" id="email"
+                    placeholder="example@gmail.com" required>
                 <label for="message">Message</label>
                 <textarea name="message" id="message" rows="5"></textarea>
                 <input type="submit" value="Submit">

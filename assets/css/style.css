@@ -22,16 +22,17 @@ header {
     margin: 0em 0em 1em 0em;
     padding: 0em;
     background-color: white;
+
+    max-width:100%;
 }
 
 section,
 #inside-header {
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 #inside-header {
-    width: 994px;
     position: relative;
 }
 
@@ -76,7 +77,8 @@ header h1 {
 }
 
 section {
-    width: 960px;
+    max-width: 60%;
+    margin-left: 3rem;
     border-width: thin;
     padding: 1em;
     border-color: #ddd;
@@ -206,4 +208,79 @@ input[type="submit"] {
 
 #rps {
     background-image: url(../images/rps.jpg);
+}
+
+@media screen and (min-width: 981px){
+    section,
+    #inside-header {
+        max-width: 60%;
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 980px) and (min-width: 769px) {
+    section,
+    #inside-header {
+        max-width: 75%;
+        margin-left: 3rem;
+    }
+    li a {
+        padding: 0.5em 1em 0.5em 1em;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+    section,
+    #inside-header {
+        max-width: 100%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    img#john {
+        width: 100%
+    }
+    li a {
+        padding: 0.1em 0.2em 0.1em 0.2em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        position: static;
+        padding-bottom: 5rem;
+    }
+    #h1-container {
+        position: relative;
+        height: 5rem;
+    }
+    header h1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: block;
+        text-align: center;
+    }
+    section,
+    #inside-header {
+        max-width: 100%;
+        margin-left: 0rem;
+    }
+    img#john {
+        width: 100%
+    }
+    nav {
+        float:none;
+        margin-top: 5rem;
+        margin-bottom: 0rem;
+        position: absolute;
+        bottom:0;
+        right:0;
+        left:0;
+        text-align: center;
+    }
+    nav ul {
+        padding-inline-start:0px;
+    }
 }
