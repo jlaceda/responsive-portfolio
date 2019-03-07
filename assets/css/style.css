@@ -218,6 +218,9 @@ input[type="submit"] {
         max-width: 60%;
         margin-left: 3rem;
     }
+    nav {
+        margin-right: 2rem;
+    }
 }
 
 @media screen and (max-width: 980px) and (min-width: 769px) {
@@ -228,6 +231,9 @@ input[type="submit"] {
     }
     li a {
         padding: 0.5em 1em 0.5em 1em;
+    }
+    nav {
+        margin-right: 2rem;
     }
 }
 
@@ -243,6 +249,9 @@ input[type="submit"] {
     }
     li a {
         padding: 0.1em 0.2em 0.1em 0.2em;
+    }
+    nav {
+        margin-right: 0.2rem;
     }
 }
 
