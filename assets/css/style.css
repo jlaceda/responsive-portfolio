@@ -11,8 +11,10 @@ h1, h2, .project span {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-img {
+img#john {
+    width: 200px;
     float: left;
+    margin: 0em 1em 1em 0em;
 }
 
 header {
@@ -22,7 +24,6 @@ header {
     margin: 0em 0em 1em 0em;
     padding: 0em;
     background-color: white;
-
     max-width:100%;
 }
 
@@ -61,7 +62,7 @@ input[type="submit"],
     background-color: #4aaaa5;
     color:white;
     animation-name: teal-hover;
-    animation-duration: 500ms;
+    animation-duration: 400ms;
 }
 
 header h1 {
@@ -85,11 +86,6 @@ section {
 
 section hr {
     margin-bottom: 1em;
-}
-
-section img {
-    width: 200px;
-    margin: 0em 1em 1em 0em;
 }
 
 section a:visited,
@@ -132,7 +128,7 @@ section h2 {
 /* contact page specific css */
 
 form {
-    width: 960px;
+    width: 100%;
 }
 
 label,
@@ -141,7 +137,6 @@ textarea{
     display: block;
     width: 100%;
     line-height: 1.5em;
-    width: 955px;
 }
 
 label {
@@ -164,46 +159,33 @@ input[type="submit"] {
     margin-bottom: 0em;
     font-size: 1em;
     display: block;
-    width: 10%;
+    width: 6rem;
     padding: 0.2em 0.5em 0.2em 0.5em;
 }
 
 /* portfolio page specific css */
 
 .project {
-    width: 275px;
-    height: 200px;
+    width: 33%;
     margin: 2em;
     float: left;
+    position: relative;
+}
+
+.project img {
+    width: 100%;
+    z-index: 2;
 }
 
 .project span {
     display: block;
     text-align: center;
-    position: relative;
-    top: 6.5em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1em;
     padding: 0.75em 0em 0.75em 0em;
     font-size: 1.2em;
-}
-
-#hangman {
-    background-image: url(../images/hangman.jpg);
-}
-
-#rpg-game {
-    background-image: url(../images/rpg-game.jpg);
-}
-
-#trivia {
-    background-image: url(../images/trivia.jpg);
-}
-
-#widget {
-    background-image: url(../images/widget.jpg);
-}
-
-#rps {
-    background-image: url(../images/rps.jpg);
 }
 
 @media screen and (min-width: 981px){
@@ -287,6 +269,9 @@ input[type="submit"] {
     }
     nav ul {
         padding-inline-start:0px;
+    }
+    .project {
+        width: 80%;
     }
 }
 
