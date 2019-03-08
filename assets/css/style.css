@@ -26,12 +26,6 @@ header {
     max-width:100%;
 }
 
-section,
-#inside-header {
-    /* margin-left: auto;
-    margin-right: auto; */
-}
-
 #inside-header {
     position: relative;
 }
@@ -230,7 +224,7 @@ input[type="submit"] {
         margin-left: 3rem;
     }
     li a {
-        padding: 0.5em 1em 0.5em 1em;
+        padding: 1em 1em 1em 1em;
     }
     nav {
         margin-right: 2rem;
@@ -248,7 +242,7 @@ input[type="submit"] {
         width: 100%
     }
     li a {
-        padding: 0.1em 0.2em 0.1em 0.2em;
+        padding: 1em 0.2em 1em 0.2em;
     }
     nav {
         margin-right: 0.2rem;
