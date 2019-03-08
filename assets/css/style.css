@@ -62,7 +62,7 @@ input[type="submit"],
     background-color: #4aaaa5;
     color:white;
     animation-name: teal-hover;
-    animation-duration: 400ms;
+    animation-duration: 250ms;
 }
 
 header h1 {
